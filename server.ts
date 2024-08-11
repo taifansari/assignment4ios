@@ -7,7 +7,7 @@
 
 import app from './Server/Config/app.js';
 import debug from 'debug';
-debug('assignment4: server');
+debug('assignment4ios: server');
 import http from 'http';
 import { HttpError } from 'http-errors';
 import { AddressInfo } from 'net';
