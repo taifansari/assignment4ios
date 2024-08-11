@@ -62,7 +62,6 @@ let strategy = new JWTStrategy(jwtOptions, (jwt_payload, done) => {
 });
 passport_1.default.use(strategy);
 app.use('/api', index_1.default);
-app.use('/api/movie', passport_1.default.authenticate('jwt', { session: false }), movie_1.default);
 app.use('/api/movie', movie_1.default);
 app.use(function (req, res, next) {
     next((0, http_errors_1.default)(404));
